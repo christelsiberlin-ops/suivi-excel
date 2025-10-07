@@ -1,7 +1,7 @@
 //
 // --- CONFIGURATION ---
 //
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw_1KQE7NAyzn668yxRxn6fc1CYjfiR02dXo_yXSPTRhE1w57gdP-XGWWCqrZDyVmc/exec'; // ⚠️ PASTE YOUR URL HERE
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyRUUsaSVPSgDUoC7w6QQ2JqaD6xgIUDWaGmWqqHTbUBLBW23asMXbZUy78yY4vcg/exec'; // ⚠️ PASTE YOUR URL HERE
 
 const courseStructure = [
     {
