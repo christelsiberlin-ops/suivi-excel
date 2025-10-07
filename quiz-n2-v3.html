@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Tableaux croisés dynamiques</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-purple-50 to-indigo-100 min-h-screen p-8">
+    <div class="max-w-3xl mx-auto">
+        <div class="bg-white rounded-lg shadow-xl p-6 mb-6">
+            <h1 class="text-2xl font-bold text-purple-900 mb-2">Quiz - Tableaux croisés dynamiques</h1>
+            <p class="text-gray-600">Niveau 2 - Vidéo 3</p>
+            <p class="text-sm text-gray-500 mt-2">✅ Validez vos connaissances avant de passer à la suite</p>
+        </div>
+
+        <form id="quizForm" class="space-y-6">
+            
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="font-bold text-lg text-gray-800 mb-4">1. À quoi sert un tableau croisé dynamique (TCD) ?</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q1" value="a" class="w-4 h-4">
+                        <span>À synthétiser et analyser de grandes quantités de données</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q1" value="b" class="w-4 h-4">
+                        <span>À créer des graphiques uniquement</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q1" value="c" class="w-4 h-4">
+                        <span>À saisir des données</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q1" value="d" class="w-4 h-4">
+                        <span>À imprimer des tableaux</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="font-bold text-lg text-gray-800 mb-4">2. Où trouve-t-on l'outil pour créer un TCD ?</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q2" value="a" class="w-4 h-4">
+                        <span>Onglet Insertion > Tableau croisé dynamique</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q2" value="b" class="w-4 h-4">
+                        <span>Onglet Accueil</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q2" value="c" class="w-4 h-4">
+                        <span>Onglet Formules</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q2" value="d" class="w-4 h-4">
+                        <span>Ctrl + T</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="font-bold text-lg text-gray-800 mb-4">3. Dans un TCD, les zones "Lignes" et "Colonnes" servent à :</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q3" value="a" class="w-4 h-4">
+                        <span>Organiser et catégoriser les données</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q3" value="b" class="w-4 h-4">
+                        <span>Calculer des sommes uniquement</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q3" value="c" class="w-4 h-4">
+                        <span>Colorer les cellules</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q3" value="d" class="w-4 h-4">
+                        <span>Supprimer des données</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="font-bold text-lg text-gray-800 mb-4">4. La zone "Valeurs" d'un TCD permet de :</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q4" value="a" class="w-4 h-4">
+                        <span>Effectuer des calculs (somme, moyenne, comptage, etc.)</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q4" value="b" class="w-4 h-4">
+                        <span>Trier les données alphabétiquement</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q4" value="c" class="w-4 h-4">
+                        <span>Changer la couleur du tableau</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q4" value="d" class="w-4 h-4">
+                        <span>Créer des formules SI</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="font-bold text-lg text-gray-800 mb-4">5. Les segments (slicers) dans un TCD permettent de :</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q5" value="a" class="w-4 h-4">
+                        <span>Filtrer les données visuellement et facilement</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q5" value="b" class="w-4 h-4">
+                        <span>Découper physiquement le tableau</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q5" value="c" class="w-4 h-4">
+                        <span>Supprimer des colonnes</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q5" value="d" class="w-4 h-4">
+                        <span>Calculer des moyennes</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="font-bold text-lg text-gray-800 mb-4">6. Un TCD est "dynamique" car :</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q6" value="a" class="w-4 h-4">
+                        <span>Il se met à jour quand on actualise et on peut facilement réorganiser les champs</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q6" value="b" class="w-4 h-4">
+                        <span>Il bouge tout seul à l'écran</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q6" value="c" class="w-4 h-4">
+                        <span>Il change de couleur automatiquement</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q6" value="d" class="w-4 h-4">
+                        <span>Il est animé</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <button type="submit" class="w-full bg-purple-600 text-white py-3 rounded-lg font-bold hover:bg-purple-700 transition-colors">
+                    ✓ Valider mes réponses
+                </button>
+            </div>
+        </form>
+
+        <div id="results" class="hidden">
+            <div class="bg-white rounded-lg shadow-xl p-8 text-center">
+                <div id="scoreDisplay" class="text-5xl font-bold mb-4"></div>
+                <div id="message" class="text-xl mb-6"></div>
+                <div id="details" class="text-left bg-gray-50 p-4 rounded-lg mb-6"></div>
+                <button onclick="location.reload()" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-indigo-700 transition-colors">
+                    🔄 Refaire le quiz
+                </button>
+                <button onclick="window.close()" class="ml-4 bg-gray-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-700 transition-colors">
+                    ← Retour au suivi
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const GOOGLE_SCRIPT_URL = "https://scripthttps://script.google.com/macros/s/AKfycbw_1KQE7NAyzn668yxRxn6fc1CYjfiR02dXo_yXSPTRhE1w57gdP-XGWWCqrZDyVmc/exec.google.com/macros/s/AKfycbwKf1mlCvqXeX3mQU7WPl01LRPqbBsRQN_zavUAXuQOLcrHIQSGJtce-I3ylOaVKwLL/exec";
+        
+        function getNomEtudiant() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const nomFromUrl = urlParams.get('nom');
+            if (nomFromUrl) {
+                localStorage.setItem('currentStudentName', nomFromUrl);
+                return nomFromUrl;
+            }
+            return localStorage.getItem('currentStudentName') || 'Étudiant inconnu';
+        }
+        
+        async function envoyerResultatQuiz(nomEtudiant, quizId, score, total, pourcentage) {
+            if (!GOOGLE_SCRIPT_URL) return;
+            try {
+                await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        type: 'quiz',
+                        nom: nomEtudiant,
+                        quiz: quizId,
+                        score: score,
+                        total: total,
+                        pourcentage: pourcentage
+                    })
+                });
+                console.log("Résultat du quiz envoyé");
+            } catch (error) {
+                console.error("Erreur:", error);
+            }
+        }
+
+        const quizId = "N2-V3 TCD";
+        const nomEtudiant = getNomEtudiant();
+
+        const headerDiv = document.querySelector('.bg-white.rounded-lg.shadow-xl.p-6.mb-6');
+        if (headerDiv && nomEtudiant !== 'Étudiant inconnu') {
+            const nameTag = document.createElement('p');
+            nameTag.className = 'text-sm text-indigo-600 font-medium mt-2';
+            nameTag.textContent = '👤 ' + nomEtudiant;
+            headerDiv.appendChild(nameTag);
+        }
+
+        const correctAnswers = {
+            q1: 'a',
+            q2: 'a',
+            q3: 'a',
+            q4: 'a',
+            q5: 'a',
+            q6: 'a'
+        };
+
+        const explanations = {
+            q1: 'Les TCD sont parfaits pour résumer, analyser et présenter de grandes quantités de données de manière claire.',
+            q2: 'On crée un tableau croisé dynamique via l\'onglet Insertion > Tableau croisé dynamique.',
+            q3: 'Les zones Lignes et Colonnes permettent de croiser et d\'organiser les données selon différentes dimensions.',
+            q4: 'La zone Valeurs contient les champs numériques sur lesquels on effectue des calculs : somme, moyenne, comptage, min, max, etc.',
+            q5: 'Les segments sont des boutons de filtrage visuels qui rendent le filtrage interactif et intuitif.',
+            q6: 'Un TCD est dynamique car il peut être actualisé avec de nouvelles données et on peut facilement déplacer les champs pour changer l\'analyse.'
+        };
+
+        document.getElementById('quizForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let score = 0;
+            let totalQuestions = Object.keys(correctAnswers).length;
+            let details = '';
+
+            for (let question in correctAnswers) {
+                const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                if (userAnswer && userAnswer.value === correctAnswers[question]) {
+                    score++;
+                    details += `<div class="mb-2"><span class="text-green-600 font-bold">✓ Question ${question.slice(1)}</span> - Correct ! ${explanations[question]}</div>`;
+                } else {
+                    details += `<div class="mb-2"><span class="text-red-600 font-bold">✗ Question ${question.slice(1)}</span> - ${explanations[question]}</div>`;
+                }
+            }
+
+            const percentage = Math.round((score / totalQuestions) * 100);
+            const scoreDisplay = document.getElementById('scoreDisplay');
+            const message = document.getElementById('message');
+            
+            if (percentage >= 80) {
+                scoreDisplay.textContent = `${score}/${totalQuestions} 🎉`;
+                scoreDisplay.className = 'text-5xl font-bold mb-4 text-green-600';
+                message.textContent = 'Excellent ! Vous maîtrisez les tableaux croisés dynamiques !';
+                message.className = 'text-xl mb-6 text-green-600';
+            } else if (percentage >= 60) {
+                scoreDisplay.textContent = `${score}/${totalQuestions} 👍`;
+                scoreDisplay.className = 'text-5xl font-bold mb-4 text-blue-600';
+                message.textContent = 'Bien ! Pratiquez encore avec les TCD.';
+                message.className = 'text-xl mb-6 text-blue-600';
+            } else {
+                scoreDisplay.textContent = `${score}/${totalQuestions} 📚`;
+                scoreDisplay.className = 'text-5xl font-bold mb-4 text-orange-600';
+                message.textContent = 'Revoyez la vidéo sur les tableaux croisés dynamiques.';
+                message.className = 'text-xl mb-6 text-orange-600';
+            }
+
+            document.getElementById('details').innerHTML = details;
+            document.getElementById('quizForm').style.display = 'none';
+            document.getElementById('results').classList.remove('hidden');
+            
+            envoyerResultatQuiz(nomEtudiant, quizId, score, totalQuestions, percentage);
+            
+            window.scrollTo(0, 0);
+        });
+    </script>
+</body>
+</html>

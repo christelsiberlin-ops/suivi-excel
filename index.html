@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suivi de Compétences Excel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <div class="container mx-auto p-6">
+        <div class="bg-white rounded-lg shadow-lg p-8 mb-6">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">Suivi de Compétences Excel 🚀</h1>
+            <p class="text-gray-600">Suivez votre progression en autonomie.</p>
+        </div>
+
+        <div id="student-selector-div" class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <label for="student-selector" class="block text-lg font-medium text-gray-700 mb-2">Sélectionnez votre nom :</label>
+            <select id="student-selector" class="w-full p-2 border border-gray-300 rounded-md">
+                <option value="">-- Choisissez votre nom --</option>
+            </select>
+            <button id="teacher-view-btn" class="mt-4 bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition">Vue Enseignant</button>
+        </div>
+
+        <div id="main-content" class="hidden">
+            <div id="student-view">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Bonjour, <span id="student-name-display" class="text-purple-600"></span>!</h2>
+                
+                <div id="session-plan" class="mb-6">
+                    <h3 class="text-xl font-bold text-gray-700 mb-3">🗓️ Plan des 9 Séances (1h50 par séance)</h3>
+                    <div class="bg-white rounded-lg shadow-md p-4">
+                        <table class="w-full text-left">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="p-2">Séance</th>
+                                    <th class="p-2">Objectifs</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b">
+                                    <td class="p-2 font-medium">Séance 1</td>
+                                    <td class="p-2">Niveau 1 : Vidéos 1, 2, 3</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-2 font-medium">Séance 2</td>
+                                    <td class="p-2">Niveau 1 : Vidéo 4 + Quizzes N1</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-2 font-medium">Séance 3</td>
+                                    <td class="p-2">**Évaluation 1**</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-2 font-medium">Séance 4</td>
+                                    <td class="p-2">Niveau 2 : Vidéos 1, 2, 3</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-2 font-medium">Séance 5</td>
+                                    <td class="p-2">Niveau 2 : Quizzes N2-V1, N2-V2, N2-V3</td>
+                                </tr>
+                                 <tr class="border-b">
+                                    <td class="p-2 font-medium">Séance 6</td>
+                                    <td class="p-2">Niveau 2 : Vidéos 4, 5, 6</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-2 font-medium">Séance 7</td>
+                                    <td class="p-2">Niveau 2 : Quizzes N2-V4, N2-V5, N2-V6</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-2 font-medium">Séance 8</td>
+                                    <td class="p-2">Niveau 3 (Bonus) / Rattrapage</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-2 font-medium">Séance 9</td>
+                                    <td class="p-2">**Évaluation 2**</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="course-content">
+                    </div>
+            </div>
+
+            <div id="teacher-view" class="hidden">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Tableau de Bord Enseignant 👩‍🏫</h2>
+                <div id="teacher-dashboard-content" class="bg-white rounded-lg shadow-md p-4 overflow-x-auto">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="students.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

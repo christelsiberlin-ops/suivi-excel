@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Mise en forme conditionnelle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-purple-50 to-indigo-100 min-h-screen p-8">
+    <div class="max-w-3xl mx-auto">
+        <div class="bg-white rounded-lg shadow-xl p-6 mb-6">
+            <h1 class="text-2xl font-bold text-purple-900 mb-2">Quiz - Mise en forme conditionnelle</h1>
+            <p class="text-gray-600">Niveau 1 - Vidéo 4</p>
+            <p class="text-sm text-gray-500 mt-2">✅ Validez vos connaissances avant de passer à la suite</p>
+        </div>
+
+        <form id="quizForm" class="space-y-6">
+            
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="font-bold text-lg text-gray-800 mb-4">1. À quoi sert la mise en forme conditionnelle ?</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q1" value="a" class="w-4 h-4">
+                        <span>À modifier automatiquement l'apparence des cellules selon leur valeur</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q1" value="b" class="w-4 h-4">
+                        <span>À créer des formules complexes</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q1" value="c" class="w-4 h-4">
+                        <span>À imprimer le document</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q1" value="d" class="w-4 h-4">
+                        <span>À protéger les cellules</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="font-bold text-lg text-gray-800 mb-4">2. Où trouve-t-on la mise en forme conditionnelle dans Excel ?</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q2" value="a" class="w-4 h-4">
+                        <span>Onglet Accueil > Mise en forme conditionnelle</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q2" value="b" class="w-4 h-4">
+                        <span>Onglet Insertion</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q2" value="c" class="w-4 h-4">
+                        <span>Onglet Formules</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q2" value="d" class="w-4 h-4">
+                        <span>Onglet Données</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="font-bold text-lg text-gray-800 mb-4">3. Je veux mettre en rouge les cellules contenant des valeurs inférieures à 10. Quelle règle utiliser ?</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q3" value="a" class="w-4 h-4">
+                        <span>Règles de mise en surbrillance > Inférieur à</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q3" value="b" class="w-4 h-4">
+                        <span>Barres de données</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q3" value="c" class="w-4 h-4">
+                        <span>Nuances de couleurs</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q3" value="d" class="w-4 h-4">
+                        <span>Jeux d'icônes</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="font-bold text-lg text-gray-800 mb-4">4. Les "barres de données" dans la mise en forme conditionnelle permettent de :</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q4" value="a" class="w-4 h-4">
+                        <span>Visualiser les valeurs sous forme de barres horizontales dans les cellules</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q4" value="b" class="w-4 h-4">
+                        <span>Créer des graphiques séparés</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q4" value="c" class="w-4 h-4">
+                        <span>Ajouter des bordures aux cellules</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q4" value="d" class="w-4 h-4">
+                        <span>Modifier la hauteur des lignes</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="font-bold text-lg text-gray-800 mb-4">5. Les "jeux d'icônes" affichent des symboles selon :</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q5" value="a" class="w-4 h-4">
+                        <span>La valeur de la cellule comparée aux autres valeurs de la plage</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q5" value="b" class="w-4 h-4">
+                        <span>La couleur de la cellule</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q5" value="c" class="w-4 h-4">
+                        <span>Le type de données (texte ou nombre)</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q5" value="d" class="w-4 h-4">
+                        <span>La taille de la police</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <button type="submit" class="w-full bg-purple-600 text-white py-3 rounded-lg font-bold hover:bg-purple-700 transition-colors">
+                    ✓ Valider mes réponses
+                </button>
+            </div>
+        </form>
+
+        <div id="results" class="hidden">
+            <div class="bg-white rounded-lg shadow-xl p-8 text-center">
+                <div id="scoreDisplay" class="text-5xl font-bold mb-4"></div>
+                <div id="message" class="text-xl mb-6"></div>
+                <div id="details" class="text-left bg-gray-50 p-4 rounded-lg mb-6"></div>
+                <button onclick="location.reload()" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-indigo-700 transition-colors">
+                    🔄 Refaire le quiz
+                </button>
+                <button onclick="window.close()" class="ml-4 bg-gray-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-700 transition-colors">
+                    ← Retour au suivi
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const GOOGLE_SCRIPT_URL = "https://script.google.com/macrhttps://script.google.com/macros/s/AKfycbw_1KQE7NAyzn668yxRxn6fc1CYjfiR02dXo_yXSPTRhE1w57gdP-XGWWCqrZDyVmc/execos/s/AKfycbwKf1mlCvqXeX3mQU7WPl01LRPqbBsRQN_zavUAXuQOLcrHIQSGJtce-I3ylOaVKwLL/exec";
+        
+        function getNomEtudiant() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const nomFromUrl = urlParams.get('nom');
+            if (nomFromUrl) {
+                localStorage.setItem('currentStudentName', nomFromUrl);
+                return nomFromUrl;
+            }
+            return localStorage.getItem('currentStudentName') || 'Étudiant inconnu';
+        }
+        
+        async function envoyerResultatQuiz(nomEtudiant, quizId, score, total, pourcentage) {
+            if (!GOOGLE_SCRIPT_URL) return;
+            try {
+                await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        type: 'quiz',
+                        nom: nomEtudiant,
+                        quiz: quizId,
+                        score: score,
+                        total: total,
+                        pourcentage: pourcentage
+                    })
+                });
+                console.log("Résultat du quiz envoyé");
+            } catch (error) {
+                console.error("Erreur:", error);
+            }
+        }
+
+        const quizId = "N1-V4 Mise en forme conditionnelle";
+        const nomEtudiant = getNomEtudiant();
+
+        const headerDiv = document.querySelector('.bg-white.rounded-lg.shadow-xl.p-6.mb-6');
+        if (headerDiv && nomEtudiant !== 'Étudiant inconnu') {
+            const nameTag = document.createElement('p');
+            nameTag.className = 'text-sm text-indigo-600 font-medium mt-2';
+            nameTag.textContent = '👤 ' + nomEtudiant;
+            headerDiv.appendChild(nameTag);
+        }
+
+        const correctAnswers = {
+            q1: 'a',
+            q2: 'a',
+            q3: 'a',
+            q4: 'a',
+            q5: 'a'
+        };
+
+        const explanations = {
+            q1: 'La mise en forme conditionnelle change automatiquement la couleur, la police ou le style d\'une cellule en fonction de sa valeur.',
+            q2: 'On trouve la mise en forme conditionnelle dans l\'onglet Accueil, dans le groupe Styles.',
+            q3: 'La règle "Inférieur à" permet de mettre en évidence les valeurs inférieures à un seuil défini.',
+            q4: 'Les barres de données créent une représentation visuelle de la valeur directement dans la cellule, proportionnelle aux autres valeurs.',
+            q5: 'Les jeux d\'icônes (flèches, feux tricolores, etc.) s\'affichent selon la position de la valeur par rapport aux autres (haute, moyenne, basse).'
+        };
+
+        document.getElementById('quizForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let score = 0;
+            let totalQuestions = Object.keys(correctAnswers).length;
+            let details = '';
+
+            for (let question in correctAnswers) {
+                const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                if (userAnswer && userAnswer.value === correctAnswers[question]) {
+                    score++;
+                    details += `<div class="mb-2"><span class="text-green-600 font-bold">✓ Question ${question.slice(1)}</span> - Correct ! ${explanations[question]}</div>`;
+                } else {
+                    details += `<div class="mb-2"><span class="text-red-600 font-bold">✗ Question ${question.slice(1)}</span> - ${explanations[question]}</div>`;
+                }
+            }
+
+            const percentage = Math.round((score / totalQuestions) * 100);
+            const scoreDisplay = document.getElementById('scoreDisplay');
+            const message = document.getElementById('message');
+            
+            if (percentage >= 80) {
+                scoreDisplay.textContent = `${score}/${totalQuestions} 🎉`;
+                scoreDisplay.className = 'text-5xl font-bold mb-4 text-green-600';
+                message.textContent = 'Excellent ! Vous maîtrisez la mise en forme conditionnelle !';
+                message.className = 'text-xl mb-6 text-green-600';
+            } else if (percentage >= 60) {
+                scoreDisplay.textContent = `${score}/${totalQuestions} 👍`;
+                scoreDisplay.className = 'text-5xl font-bold mb-4 text-blue-600';
+                message.textContent = 'Bien ! Pratiquez encore avec différentes règles.';
+                message.className = 'text-xl mb-6 text-blue-600';
+            } else {
+                scoreDisplay.textContent = `${score}/${totalQuestions} 📚`;
+                scoreDisplay.className = 'text-5xl font-bold mb-4 text-orange-600';
+                message.textContent = 'Revoyez la vidéo sur la mise en forme conditionnelle.';
+                message.className = 'text-xl mb-6 text-orange-600';
+            }
+
+            document.getElementById('details').innerHTML = details;
+            document.getElementById('quizForm').style.display = 'none';
+            document.getElementById('results').classList.remove('hidden');
+            
+            envoyerResultatQuiz(nomEtudiant, quizId, score, totalQuestions, percentage);
+            
+            window.scrollTo(0, 0);
+        });
+    </script>
+</body>
+</html>

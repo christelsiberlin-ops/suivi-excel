@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Bases de donnÃ©es et filtres Ã©laborÃ©s</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-purple-50 to-indigo-100 min-h-screen p-8">
+    <div class="max-w-3xl mx-auto">
+        <div class="bg-white rounded-lg shadow-xl p-6 mb-6">
+            <h1 class="text-2xl font-bold text-purple-900 mb-2">Quiz - Bases de donnÃ©es et filtres Ã©laborÃ©s</h1>
+            <p class="text-gray-600">Niveau 2 - VidÃ©o 5</p>
+            <p class="text-sm text-gray-500 mt-2">âœ… Validez vos connaissances avant de passer Ã  la suite</p>
+        </div>
+
+        <form id="quizForm" class="space-y-6">
+            
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="font-bold text-lg text-gray-800 mb-4">1. Dans Excel, une base de donnÃ©es est :</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q1" value="a" class="w-4 h-4">
+                        <span>Un tableau structurÃ© avec des lignes (enregistrements) et des colonnes (champs)</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q1" value="b" class="w-4 h-4">
+                        <span>Un graphique complexe</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q1" value="c" class="w-4 h-4">
+                        <span>Une formule avancÃ©e</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q1" value="d" class="w-4 h-4">
+                        <span>Un fichier Word</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="font-bold text-lg text-gray-800 mb-4">2. Un filtre Ã©laborÃ© permet de :</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q2" value="a" class="w-4 h-4">
+                        <span>Appliquer des critÃ¨res de filtrage complexes avec plusieurs conditions</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q2" value="b" class="w-4 h-4">
+                        <span>Supprimer dÃ©finitivement des donnÃ©es</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q2" value="c" class="w-4 h-4">
+                        <span>CrÃ©er des graphiques automatiquement</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q2" value="d" class="w-4 h-4">
+                        <span>Modifier la couleur des cellules</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="font-bold text-lg text-gray-800 mb-4">3. La fonction BDNB (ou DCOUNT en anglais) permet de :</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q3" value="a" class="w-4 h-4">
+                        <span>Compter les enregistrements d'une base de donnÃ©es rÃ©pondant Ã  des critÃ¨res</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q3" value="b" class="w-4 h-4">
+                        <span>CrÃ©er une nouvelle base de donnÃ©es</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q3" value="c" class="w-4 h-4">
+                        <span>Supprimer des colonnes</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q3" value="d" class="w-4 h-4">
+                        <span>Trier alphabÃ©tiquement</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="font-bold text-lg text-gray-800 mb-4">4. Pour supprimer les doublons dans une base de donnÃ©es, on utilise :</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q4" value="a" class="w-4 h-4">
+                        <span>Onglet DonnÃ©es > Supprimer les doublons</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q4" value="b" class="w-4 h-4">
+                        <span>Onglet Insertion</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q4" value="c" class="w-4 h-4">
+                        <span>Ctrl + D</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q4" value="d" class="w-4 h-4">
+                        <span>Ce n'est pas possible</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="font-bold text-lg text-gray-800 mb-4">5. La validation des donnÃ©es permet de :</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q5" value="a" class="w-4 h-4">
+                        <span>ContrÃ´ler le type de donnÃ©es qu'on peut saisir dans une cellule</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q5" value="b" class="w-4 h-4">
+                        <span>Valider un examen Excel</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q5" value="c" class="w-4 h-4">
+                        <span>CrÃ©er des graphiques</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q5" value="d" class="w-4 h-4">
+                        <span>Imprimer le document</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="font-bold text-lg text-gray-800 mb-4">6. Un sous-total dans une base de donnÃ©es permet de :</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q6" value="a" class="w-4 h-4">
+                        <span>Calculer automatiquement des totaux pour chaque groupe de donnÃ©es</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q6" value="b" class="w-4 h-4">
+                        <span>Diviser le tableau en deux</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q6" value="c" class="w-4 h-4">
+                        <span>Modifier les couleurs</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="q6" value="d" class="w-4 h-4">
+                        <span>CrÃ©er un nouveau fichier</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <button type="submit" class="w-full bg-purple-600 text-white py-3 rounded-lg font-bold hover:bg-purple-700 transition-colors">
+                    âœ“ Valider mes rÃ©ponses
+                </button>
+            </div>
+        </form>
+
+        <div id="results" class="hidden">
+            <div class="bg-white rounded-lg shadow-xl p-8 text-center">
+                <div id="scoreDisplay" class="text-5xl font-bold mb-4"></div>
+                <div id="message" class="text-xl mb-6"></div>
+                <div id="details" class="text-left bg-gray-50 p-4 rounded-lg mb-6"></div>
+                <button onclick="location.reload()" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-indigo-700 transition-colors">
+                    ðŸ”„ Refaire le quiz
+                </button>
+                <button onclick="window.close()" class="ml-4 bg-gray-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-700 transition-colors">
+                    â† Retour au suivi
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const correctAnswers = {
+            q1: 'a',  // Tableau structurÃ©
+            q2: 'a',  // CritÃ¨res complexes
+            q3: 'a',  // Compter
+            q4: 'a',  // Supprimer les doublons
+            q5: 'a',  // ContrÃ´ler la saisie
+            q6: 'a'   // Totaux par groupe
+        };
+
+        const explanations = {
+            q1: 'Une base de donnÃ©es Excel est un tableau organisÃ© oÃ¹ chaque ligne reprÃ©sente un enregistrement et chaque colonne un champ d\'information.',
+            q2: 'Le filtre Ã©laborÃ© (ou filtre avancÃ©) permet d\'appliquer des critÃ¨res multiples et complexes sur plusieurs colonnes simultanÃ©ment.',
+            q3: 'BDNB compte le nombre d\'enregistrements dans une base de donnÃ©es qui rÃ©pondent aux critÃ¨res spÃ©cifiÃ©s.',
+            q4: 'L\'outil "Supprimer les doublons" dans l\'onglet DonnÃ©es permet d\'Ã©liminer automatiquement les lignes identiques.',
+            q5: 'La validation des donnÃ©es crÃ©e des rÃ¨gles pour limiter ce qu\'on peut saisir (nombres, dates, listes dÃ©roulantes, etc.).',
+            q6: 'Les sous-totaux insÃ¨rent automatiquement des lignes de calcul (somme, moyenne, etc.) pour chaque groupe de donnÃ©es triÃ©es.'
+        };
+
+        document.getElementById('quizForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let score = 0;
+            let totalQuestions = Object.keys(correctAnswers).length;
+            let details = '';
+
+            for (let question in correctAnswers) {
+                const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                
+                if (userAnswer && userAnswer.value === correctAnswers[question]) {
+                    score++;
+                    details += `<div class="mb-2"><span class="text-green-600 font-bold">âœ“ Question ${question.slice(1)}</span> - Correct ! ${explanations[question] || ''}</div>`;
+                } else {
+                    details += `<div class="mb-2"><span class="text-red-600 font-bold">âœ— Question ${question.slice(1)}</span> - ${explanations[question] || 'RÃ©ponse incorrecte'}</div>`;
+                }
+            }
+
+            const percentage = Math.round((score / totalQuestions) * 100);
+
+            const scoreDisplay = document.getElementById('scoreDisplay');
+            const message = document.getElementById('message');
+            
+            if (percentage >= 80) {
+                scoreDisplay.textContent = `${score}/${totalQuestions} ðŸŽ‰`;
+                scoreDisplay.className = 'text-5xl font-bold mb-4 text-green-600';
+                message.textContent = 'Excellent ! Vous maÃ®trisez les bases de donnÃ©es et filtres !';
+                message.className = 'text-xl mb-6 text-green-600';
+            } else if (percentage >= 60) {
+                scoreDisplay.textContent = `${score}/${totalQuestions} ðŸ‘`;
+                scoreDisplay.className = 'text-5xl font-bold mb-4 text-blue-600';
+                message.textContent = 'Bien ! Pratiquez avec des bases de donnÃ©es rÃ©elles.';
+                message.className = 'text-xl mb-6 text-blue-600';
+            } else {
+                scoreDisplay.textContent = `${score}/${totalQuestions} ðŸ“š`;
+                scoreDisplay.className = 'text-5xl font-bold mb-4 text-orange-600';
+                message.textContent = 'Revoyez la vidÃ©o sur les bases de donnÃ©es.';
+                message.className = 'text-xl mb-6 text-orange-600';
+            }
+
+            document.getElementById('details').innerHTML = details;
+            document.getElementById('quizForm').style.display = 'none';
+            document.getElementById('results').classList.remove('hidden');
+            envoyerResultatQuiz(nomEtudiant, quizId, score, totalQuestions, percentage);
+            window.scrollTo(0, 0);
+        });
+    </script>
+    <script>
+        const GOOGLE_SCRIPT_URL = "https://scrihttps://script.google.com/macros/s/AKfycbw_1KQE7NAyzn668yxRxn6fc1CYjfiR02dXo_yXSPTRhE1w57gdP-XGWWCqrZDyVmc/execpt.google.com/macros/s/AKfycbwKf1mlCvqXeX3mQU7WPl01LRPqbBsRQN_zavUAXuQOLcrHIQSGJtce-I3ylOaVKwLL/exec";
+        
+        function getNomEtudiant() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const nomFromUrl = urlParams.get('nom');
+            if (nomFromUrl) {
+                localStorage.setItem('currentStudentName', nomFromUrl);
+                return nomFromUrl;
+            }
+            return localStorage.getItem('currentStudentName') || 'Étudiant inconnu';
+        }
+        
+        async function envoyerResultatQuiz(nomEtudiant, quizId, score, total, pourcentage) {
+            if (!GOOGLE_SCRIPT_URL) return;
+            try {
+                await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        type: 'quiz',
+                        nom: nomEtudiant,
+                        quiz: quizId,
+                        score: score,
+                        total: total,
+                        pourcentage: pourcentage
+                    })
+                });
+                console.log("Résultat du quiz envoyé");
+            } catch (error) {
+                console.error("Erreur:", error);
+            }
+        }
+
+        // ⚠️ CHANGEZ LE NOM POUR CHAQUE QUIZ
+        const quizId = "N2-V5 Formules simples"; // Adaptez selon le quiz
+        const nomEtudiant = getNomEtudiant();
+
+        const headerDiv = document.querySelector('.bg-white.rounded-lg.shadow-xl.p-6.mb-6');
+        if (headerDiv && nomEtudiant !== 'Étudiant inconnu') {
+            const nameTag = document.createElement('p');
+            nameTag.className = 'text-sm text-indigo-600 font-medium mt-2';
+            nameTag.textContent = '👤 ' + nomEtudiant;
+            headerDiv.appendChild(nameTag);
+        }
+    </script>
+</body>
+</html>
